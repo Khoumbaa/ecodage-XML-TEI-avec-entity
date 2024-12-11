@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [ 
+<!ENTITY u-pour-v "<choice><orig>u</orig><reg>v</reg></choice>">
+<!ENTITY U-pour-V "<choice><orig>U</orig><reg>V</reg></choice>">
+<!ENTITY s-long "<choice><orig>ſ</orig><reg>s</reg></choice>">
+<!ENTITY i-pour-j "<choice><orig>i</orig><reg>j</reg></choice>">
+<!ENTITY J-pour-I "<choice><orig>J</orig><reg>I</reg></choice>">
+<!ENTITY v-pour-u "<choice><orig>v</orig><reg>u</reg></choice>">
+<!ENTITY V-pour-U "<choice><orig>V</orig><reg>U</reg></choice>">
+<!ENTITY q-tilde "<choice><orig>q̃</orig><reg>que</reg></choice>">
+<!ENTITY a-tilde "<choice><orig>ã</orig><reg>an</reg></choice>">
+<!ENTITY o-tilde "<choice><orig>õ</orig><reg>on</reg></choice>">
+<!ENTITY e-tilde "<choice><orig>ẽ</orig><reg>en</reg></choice>">
+<!ENTITY et "<choice><orig><abbr><am>&amp;</am></abbr></orig><expan><ex>et</ex></expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lancelot</title>
+            <author>Benoît Rigaud</author>
+            <principal>Khoumba NDIAYE</principal>
+            <respStmt> 
+               <resp>Encodage du fichier</resp>
+               <name type="person" xml:id="Khoumba">Khoumba NDIAYE</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Devoir maison examen d'encodage XML/TEI pour le 20 janvier 2025.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>D'après le livre Lancelot de Benoît Rigaud (1591). <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k3208644/"/>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="fr">Français</language>
+           </langUsage>
+     </profileDesc>
+     <revisionDesc>
+        <listChange>
+           <change when="2024-12-09" who="Khoumba">Encodage des nom et des lieux, encodage des lettres tildes, encodage des lignes </change>
+           <change when="2024-12-08" who="Khoumba"> Ajout des balises div pour séparer les livres et des balises paragraphe, ajout des balises fw.</change>
+           <change when="2024-12-08" who="Khoumba"> Ajout des balises pour les lettrines ainsi que premièr encodage des lettres ramistes, des s longs et des esperluettes. </change>
+        </listChange>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="livre" n="1">
+         <head>
+            <fw type="header">LANCELO D&V-pour-U; LAC. 49</fw>
+         </head>
+            <p>leur di&s-long;ant qu'il e&s-long;toit ad&s-long;traint par &s-long;erment de ne <lb/>leur faire compagnie &v-pour-u;ne &s-long;eulle heure, ni d'aller à <lb/>la mai&s-long;on du <persName corresp="#RoyArtus">Roy Artus</persName> a&u-pour-v;ant &v-pour-u;n certain temps: <lb/>il prent congé d'eux,eux retournent en Cour, &et;<lb/> comptent au <persName corresp="#RoyArtus">Roy</persName> &et; à la <persName corresp="#RoyneGenievre">Royne</persName> ce quils a&u-pour-v;oyent <lb/>veu, &s-long;ceu de <persName corresp="#Lancelot">Lancelot</persName>. <persName corresp="#Lancelot">Lancelot</persName> e&s-long;tant party de <lb/><persName corresp="#Gauvain">Gau&u-pour-v;ain</persName> &et; <persName corresp="#Yvain">Y&u-pour-v;ain</persName> s'en va en <placeName corresp="#Soreloys">Soreloys</placeName>, y cuidant <lb/>trou&u-pour-v;er <persName corresp="#Gallehault">Gallehault</persName>, il ne le treu&u-pour-v;e, &et; de regret &et; <lb/>melancolie qu'il a&u-pour-v;oit d'e&s-long;tre ab&s-long;ent de la <persName corresp="#RoyneGenievre">Royne</persName>, <lb/>&et; d'&v-pour-u;n &s-long;onge qu'il a&u-pour-v;oitfaict, qu'elle l'a&u-pour-v;oit mis <lb/>en oubly, il de&u-pour-v;int forcené, &et; &s-long;e mit à courir les <lb/>champs, n'ayant ve&s-long;tu que &s-long;a chemi&s-long;e &et; portant <lb/>&v-pour-u;ne e&s-long;pe dont il fit beaucoup de maulx. <persName corresp="#Gallehault">Galle<lb break="no"/>hault</persName> depuis arri&u-pour-v;e en <placeName corresp="#Soreloys">Soreloys</placeName>, où ayant &s-long;ceu la <lb/>venue de <persName corresp="#Lancelot">Lancelot</persName>, &et; la façon comme il e&s-long;toit <lb/>party, apres l'a&u-pour-v;oir en&u-pour-v;oyé chercher par tout, &et; <lb/>n'en a&u-pour-v;oir eu nou&u-pour-v;elles, e&s-long;timant qu'il fut mort, <lb/>en conceut tel regret qu'il de&u-pour-v;int extremement <lb/>malade : le <persName corresp="#RoyArtus">Roy Artus</persName> &et; la <persName corresp="#RoyneGenievre">Royne</persName> le viennent vi<lb break="no"/>&s-long;iter, apres a&u-pour-v;oir quelque temps languy, il mou<lb break="no"/>rut, dont le <persName corresp="#RoyArtus">Roy</persName>, la <persName corresp="#RoyneGenievre">Royne</persName> &et; tous les Barons &et; <lb/>Seigneurs de <placeName corresp="Bretagne">Bretagne</placeName> &et; <placeName corresp="#Soreloys">Soreloys</placeName>s firent &v-pour-u;n mer<lb break="no"/>&u-pour-v;elleux dueil.</p>
+            <p><emph>Fin du premier livre. D </emph></p>
+            <pb n="50"/>
+         </div>
+         <div type="frontispiece"><figure><figDesc>Illustration décorative séparant le 1er livre du 2ème.</figDesc></figure></div>
+         <div type="livre" n="2">
+            <head><title>LE SECOND LIVRE DE LANCELOT D&V-pour-U; LAC.</title></head>
+            <p><emph>Comme <persName corresp="#LaDameDuLac">la dame du Lac</persName> guerit <persName corresp="#Lancelot">Lancelot</persName> de &s-long;a forcenerie.</emph></p>
+            <p><persName corresp="#LaDameDuLac"><hi rend="lettrine">L</hi>a dame du Lac</persName>, qui a&u-pour-v;oit nourry <lb/><persName corresp="#Lancelot">Lancelot</persName>, &s-long;ceut qu'il e&s-long;toit en <lb/><placeName corresp="#Cornuaille">Cornuaille</placeName>, forcené &et; hors du <lb/>&s-long;ens, elle le va trou&u-pour-v;er, l'emmene <lb/>en &s-long;on pays,&et; le guerit de &s-long;a for<lb break="no"/>cenerie, il demeure toutesfois <lb/>fort tri&s-long;te pour la desfiance où il e&s-long;toit d'a&u-pour-v;oir per<lb break="no"/>du les bonnes graces de la <persName corresp="#RoyneGenievre">Royne Genie&u-pour-v;re</persName>:<persName corresp="#LaDameDuLac">la da<lb break="no"/>me du Lac</persName> congnoi&s-long;&s-long;ant son mal, l'a&s-long;&s-long;eure du re<lb break="no"/>cou&u-pour-v;remeut de sa &i-pour-j;oye, luy con&s-long;eille aller prez <placeName corresp="#Kamalot">Ka<lb break="no"/>malot</placeName> où e&s-long;toit le <persName corresp="#RoyArtus">Roy Artus</persName>, s'y trou&u-pour-v;er le &i-pour-j;our de <lb/>l'A&s-long;cen&s-long;io, &et; &s-long;e tenir embu&s-long;ché en la fore&s-long;t de <placeName corresp="#Kamalot">Ka<lb break="no"/>malot</placeName> &s-long;ans &s-long;e faire congnoi&s-long;tre, &et; qu'à ce &i-pour-j;our la <lb/><persName corresp="#RoyneGenievre">Royne</persName> &s-long;eroit emmenee de la Cour,&et; recou&s-long;&s-long;e par <lb/>luy, à quoy <persName corresp="#Lancelot">Lancelot</persName> obeit.</p>
+            <p><emph>Comme la <persName corresp="#RoyneGenievre">Royne Genie&u-pour-v;re</persName> fut emmenee a&u-pour-v;ec <persName corresp="#KeuxLeSenechal">Keux le Senechal</persName>, par <persName corresp="#Meleagant">Meleagant</persName> </emph></p>
+            <p><hi rend="lettrine">L</hi>E <persName corresp="#RoyArtus">Roy Artus</persName> tenant &s-long;a Cour le &i-pour-j;our de l'A&s-long;cen<lb break="no"/>&s-long;ion, y arri&u-pour-v;e <persName corresp="#Meleagant">Meleagant</persName> fils de <persName corresp="#Baudemagus">Baudemagus</persName> <lb/>Roy <pb n="51"/> <fw type="header">LANCELOT D&V-pour-U; LAC. 51</fw> Roy de Gorre, di&s-long;ant y e&s-long;tre venu nour combatre <lb/><persName corresp="#Lancelot">Lancelot</persName>, qui s'e&s-long;toit plainct qu'en &v-pour-u;n tournoy <persName corresp="#Meleagant">Me<lb break="no"/>leagant</persName> l'a&u-pour-v;oit ble&s-long;&s-long;é en trahi&s-long;on, ne le trou&u-pour-v;ant, <lb/><persName corresp="#Lyonnel">Lyonnel</persName> le voulut combatre, ce que le <persName corresp="#RoyArtus">Roy</persName> ne per<lb break="no"/>mit, <persName corresp="#Meleagant">Meleagant</persName> dit au <persName corresp="#RoyArtus">Roy Artus</persName> qu'il tenoit plu<lb break="no"/>&s-long;ieurs de ses Che&u-pour-v;aliers en pri&s-long;on, &et; qu'il les deli<lb break="no"/>&u-pour-v;reroit s'il o&s-long;oit bailler la <persName corresp="#RoyneGenievre">Royne</persName> conduire à &v-pour-u;n <lb/>Che&u-pour-v;aier &i-pour-j;u&s-long;ques à la fore&s-long;t, contre lequel il com<lb break="no"/>batroit, &et; s'il pou&u-pour-v;oit le vaincre, qu'il luy &s-long;eroit <lb/>loi&s-long;ible emmener la <persName corresp="#RoyneGenievre">Royne</persName>. <persName corresp="#KeuxLeSenechal">Keux le Senechal</persName> &s-long;up<lb break="no"/> plie le <persName corresp="#RoyArtus">Roy</persName> luy bailler la conduite de la <persName corresp="#RoyneGenievre">Royne</persName>, le <lb/><persName corresp="#RoyArtus">Roy</persName> luy accorde par importunité, au gand regret <lb/>de la <persName corresp="#RoyneGenievre">Royne</persName>,il la conduit &i-pour-j;usques en la fore&s-long;t, <persName corresp="#Meleagant">Me<lb break="no"/>leagant</persName> combat contre luy, le vainct, &et; emmene la <lb/><persName corresp="#RoyneGenievre">Royne</persName>, quoy voyant <persName corresp="#Lancelot">Lancelot</persName>, qui e&s-long;toit embu&s-long;ché e<lb/>n la fore&s-long;t, &s-long;uyt <persName corresp="#Meleagant">Meleagant</persName> pour recourre la <persName corresp="#RoyneGenievre">Roy<lb break="no"/>ne</persName>, il l'a&s-long;&s-long;ault &et; le ren&u-pour-v;er&s-long;e à terre. Les gens de <lb/><persName corresp="#Meleagant">Meleagant</persName> tuent le che&u-pour-v;al de <persName corresp="#Lancelot">Lancelot</persName>, à fin qu'il <lb/>ne les peu&s-long;t &s-long;uy&u-pour-v;re, remont&e-tilde;t leur mai&s-long;tre, au gr&a-tilde;d <lb/>regret de <persName corresp="#Lancelot">Lancelot</persName>,emmenent la <persName corresp="#RoyneGenievre">Royne</persName>, &et; <persName corresp="#KeuxLeSenechal">Keux <lb/>le Senechal</persName>, <persName corresp="#Lancelot">Lancelot</persName> les suy&u-pour-v;ant trou&u-pour-v;e &v-pour-u;n Nain, <lb/>qui c&o-tilde;dui&s-long;oit &v-pour-u;ne charrette, qui luy dit &q-tilde; s'il vou<lb break="no"/>loit m&o-tilde;ter en &s-long;a charette il le meneroit où e&s-long;toit la <lb/><persName corresp="#RoyneGenievre">Royne</persName>:<persName corresp="#Lancelot">Lancelot</persName> accepte la condition, &et; y monte, <lb/>combien que lors ce fu&s-long;t &v-pour-u;n grand deshonneur &et; <lb/>infamie perpetuelle de m&o-tilde;ter &s-long;ur &v-pour-u;ne charrette, &et; <lb/>e&s-long;toit aut&a-tilde;t que d'e&s-long;tre en ce temp mis au pillory.</p>
+            <p><emph>De ce qui ad&u-pour-v;int à <persName corresp="#Lancelot">Lancelot</persName> estant en queste de <lb/>la <persName corresp ="#RoyneGenievre">Royne Genie&u-pour-v;re</persName> a&u-pour-v;ec <persName corresp="#Gauvain">Gau&u-pour-v;ain</persName>, <unclear cert="medium" reason="eccentric_ductus">&et;</unclear> &s-long;es vi<lb break="no"/><unclear cert="medium" reason="eccentric_ductus">c</unclear>toires <unclear cert="medium" reason="eccentric_ductus">&et;</unclear> conquestes mer&u-pour-v;eilleu&s-long;es.</emph> <lb/>D 2 </p>
+       </div>
+     </body>
+  </text>
+</TEI>
